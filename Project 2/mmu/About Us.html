@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#mySidenav a {
+  position: absolute;
+  left: -115px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 155px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 10px 10px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#CustomizeCourses {
+  top: 93.58px;
+  background-color: #f44336;
+}
+
+#Profile {
+  top: 177px;
+  background-color: #f44336;
+}
+
+#Attendance {
+  top: 260px;
+  background-color: #f44336;
+}
+
+#Result {
+  top: 320px;
+  background-color: #f44336;
+  }
+
+#Homepage {
+  top: 380px;
+  background-color: #f44336;
+  }
+  
+  #LogOut {
+  top: 440px;
+  background-color: #f44336;
+  }
+  
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+    
+  <a href="Course.html" id="CustomizeCourses">Customize Courses</a>
+  <a href="#" id="Profile">Personal Profile</a>
+  <a href="attendance.html" id="Attendance">Attendance</a>
+  <a href="Result_Login.html" id="Result">Result</a>
+  <a href="Homepage.html" id="Homepage" >Homepage</a>
+  <a href="LogOut.html" id="LogOut">Log Out</a>
+</div>
+
+
+
+<div class="main">
+
+<style>
+body {
+  margin: 200;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #090000;
+  text-align: center;
+  padding: 14px 131px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #FF0000;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #FF0000;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+    .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #f44336;
+   color: white;
+   text-align: center;
+}
+    
+    
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+    
+    
+    
+    
+body, html {
+  height: 50%;
+  margin: 150;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("1.jpg");
+  
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+    
+<div class="topnav" id="myTopnav">
+   <a href="About Us.html">About Us</a>
+  <a href="Course.html">Course</a>
+  <a href="#contact">Faculty</a>
+  <a href="Result_Login.html">Result</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+    <marquee> <h2>Maharishi Markandeshwar (Deemed to be University) </h2></marquee>
+    <center> <img src="https://upload.wikimedia.org/wikipedia/en/1/1d/NAAC_LOGO.png" alt="Image result for NAAC" width="173" height="148"   style="display: inline-block"/> </center>
+</div>
+    
+    
+<div class="bg-image"></div>
+
+<div class="bg-text">
+  <h2>Maharishi Markandeshwar (Deemed to be University)</h2>
+  
+    <p><b>Maharishi Markandeshwar (Deemed to be University) is a leading University in North India and has become a symbol of quality education in technical, medical and other professional streams. MM(DU) has been accredited by NAAC as Grade "A" university. Since its inception, the University is committed to excel in research, innovation and skill development. Our Industry oriented education system helps us to make our students leaders in the professional world.</b> </p>
+</div>
+ 
+</body>
+</html>
+
+
+
+    <div class="footer">
+ <p> <b>Copyright NAAC| All rights reserved </b></p>
+</div>
+
+    
+</body>
+
+
+
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+

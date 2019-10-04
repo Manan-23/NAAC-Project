@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+header {
+  background-color: white;
+  padding: 30px;
+  text-align: Center;
+  font-size: 35px;
+  color: Black;  	
+  border-stype: solid;
+  border-width: 5px;
+}
+
+footer {
+  background-color: red;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+</style>
+
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+</head>
+
+<body>
+<header>
+<img src="https://upload.wikimedia.org/wikipedia/en/1/1d/NAAC_LOGO.png" alt="NAAC Logo" width="100" height="100" align="left">
+<H5>ADD New Courses</H5> 
+<Hr>
+</header>
+
+<form name="myForm" onsubmit="return validateForm()" method="post">
+  Course Name : <input type="text" name="fname"><br><br>
+  Course Code : <input type="text" name="fname"><br><br>
+  Content     : <input type="text" name="fname"><br><br>
+  Features    : <input type="text" name="fname"><br><br>
+  <input type="submit" value="Add Course">
+</form>
+<br>
+
+<footer>
+@ Copyright National Assessment And Accreditation Council | All Right Reserved
+</footer>
+
+</body>
+</html>
